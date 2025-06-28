@@ -32,7 +32,7 @@ module.exports = {
 		],
 	},
 	devtool: "eval-source-map",
-	devserver: {
+	devServer: {
 		watchFiles: ["./src/template.html"],
 	},
 };
