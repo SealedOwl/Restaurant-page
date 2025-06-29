@@ -12,6 +12,25 @@ const sections = {
 function switchSection(name) {
 	main.innerHTML = "";
 	main.appendChild(sections[name]());
+
+	if (name === "home") {
+		const $menuBtn = document.querySelector(".menu-btn");
+		if ($menuBtn) {
+			$menuBtn.addEventListener("click", () => {
+				setActiveTab("menu");
+				switchSection("menu");
+			});
+		}
+	}
+}
+
+function setActiveTab(tabName) {
+	document.querySelectorAll(".nav-btn").forEach((button) => {
+		button.classList.remove("active");
+	});
+
+	const activeBtn = document.getElementById(tabName);
+	activeBtn.classList.add("active");
 }
 
 const main = document.createElement("main");
@@ -21,13 +40,13 @@ const $navButtons = document.querySelectorAll(".nav-btn");
 
 $navButtons.forEach((button) => {
 	button.addEventListener("click", () => {
-		$navButtons.forEach((btn) => btn.classList.remove("active"));
-
-		button.classList.add("active");
-		switchSection(button.id);
+		const btnId = button.id;
+		setActiveTab(btnId);
+		switchSection(btnId);
 	});
 });
 
 // Initial Render
 
+setActiveTab("home");
 switchSection("home");

@@ -66,7 +66,7 @@ export default function renderMenu() {
 
 function createMenuCard({ name, price, img }) {
 	const card = document.createElement("div");
-	card.classList.add("menu-items");
+	card.classList.add("menu-card");
 
 	const image = document.createElement("img");
 	image.src = img;
@@ -80,7 +80,7 @@ function createMenuCard({ name, price, img }) {
 
 	const Itemprice = document.createElement("p");
 	Itemprice.textContent = price;
-	Itemprice.classList.add("price");
+	Itemprice.classList.add("menu-price");
 
 	card.appendChild(image);
 	card.appendChild(title);
