@@ -193,3 +193,14 @@ section p {
 	border: none;
 	cursor: pointer;
 }
+
+@media (max-width: 800px) {
+	.menu-img {
+		height: 200px;
+	}
+
+	.about-section {
+		flex-direction: column;
+		padding: 2rem 1rem;
+	}
+}
