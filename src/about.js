@@ -10,13 +10,13 @@ export default function renderAbout() {
 
 	const aboutDescription = document.createElement("p");
 	aboutDescription.innerHTML = `
-    Since 2004, Savoureux Café has been a cozy spot where good food and great company come together. <br>
-    We serve handcrafted coffee, fresh-baked pastries, and hearty bites made with simple, honest ingredients.<br>
+    Since 2004, Savoureux Café has been a cozy spot where good food and great company come together. 
+    We serve handcrafted coffee, fresh-baked pastries, and hearty bites made with simple, honest ingredients.
 
     Whether you're starting your day with an espresso or winding down with a slice of pie, 
     our café is the perfect place to relax, catch up, or just enjoy a quiet moment.<br>
 
-    Come in, get comfortable — we'll take care of the rest.
+    <span>Come in, get comfortable — we'll take care of the rest.</span>
     `;
 
 	about.appendChild(aboutTitle);
