@@ -1,12 +1,14 @@
 import "./styles.css";
 import renderHome from "./home";
 import renderMenu from "./menu";
+import renderAbout from "./about";
 
 const $content = document.querySelector("#content");
 
 const sections = {
 	home: renderHome,
 	menu: renderMenu,
+	about: renderAbout,
 };
 
 function switchSection(name) {
