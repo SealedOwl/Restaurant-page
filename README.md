@@ -25,3 +25,6 @@ This is part of a practice project while learning full stack development through
 - Git & GitHub
 
 ---
+##  Live Demo
+
+🔗 [View Website](https://sealedowl.github.io/Restaurant-page/)
